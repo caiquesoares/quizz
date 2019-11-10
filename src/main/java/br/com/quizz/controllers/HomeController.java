@@ -15,18 +15,15 @@ public class HomeController {
 	private ContatoDao contatoDao;
 	
 	@RequestMapping("/")
-
 	// o metodo abaixo atende as requisições da home
 	public String index(){
-		
 		return "home";
 	}
 	
-<<<<<<< HEAD
-	@RequestMapping("/acesso")
-	public String acesso(){
-		return "acesso";
-	}
+//	@RequestMapping("/acesso")
+//	public String acesso(){
+//		return "acesso";
+//	}
 	
 	@RequestMapping("/contato")
 	public String contato(UsuarioContato usuarioContato){
@@ -34,8 +31,4 @@ public class HomeController {
 		return "contato";
 	}
 	
-	
-	
-=======
->>>>>>> d344f9fc8dd65b31d88db1a8ce95a2d406302ca6
 }
