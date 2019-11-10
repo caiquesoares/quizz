@@ -1,6 +1,6 @@
 angular.module('quiz', [])
     .component('quiz', {
-    templateUrl: '/content/dist/js/quizApp/quiz/quiz.template.html',
+    templateUrl: '/quizz/resources/js/quizApp/quiz/quiz.template.html',
     controller: ('quizController',  ['$scope', '$timeout', function ($scope, $timeout){
             let self = this;
             $scope.pontosTotalizados = 0;

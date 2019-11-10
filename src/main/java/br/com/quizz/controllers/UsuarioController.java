@@ -4,20 +4,26 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
-
 @Controller
-
 public class UsuarioController{
-
-
-	@RequestMapping("/usuario")
-
-
 	
+	@RequestMapping("/usuario")
 	public String index(){
-		
-		System.out.println("Consulte seus dados de acesso");
-		return "usuario";
+		return "usuario/perfil";
 	}
 	
+	@RequestMapping("/usuario/ranking")
+	public String usuarioRanking(){
+		return "usuario/ranking";
+	}
+	
+	@RequestMapping("/usuario/quizz")
+	public String usuarioQuizz(){
+		return "usuario/quizz";
+	}
+	
+	@RequestMapping("/usuario/sugestao")
+	public String usuarioSegestao(){
+		return "usuario/sugestao";
+	}
 }
