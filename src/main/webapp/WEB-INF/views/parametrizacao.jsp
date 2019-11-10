@@ -7,7 +7,7 @@
 <title>Quizz!</title>
 </head>
 <body>
-	<h1>NOVO!</h1>
-	<h2>Informe seus dados de login</h2>
+	<h1>Parametrizações</h1>
+	<h2>Aqui você pode cadastrar perguntas, usuários e etc...</h2>
 </body>
 </html>

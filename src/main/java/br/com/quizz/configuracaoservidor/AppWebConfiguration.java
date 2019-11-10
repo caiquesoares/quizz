@@ -20,10 +20,21 @@ import br.com.quizz.dao.ContatoDao;
 public class AppWebConfiguration {
 	
 	@Bean
+<<<<<<< HEAD
 	public InternalResourceViewResolver internalResourceViewResolver() {
 		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
 		resolver.setPrefix("/WEB-INF/views/");
 		resolver.setSuffix( ".jsp");
 		return resolver;
+=======
+	public InternalResourceViewResolver InternalResourceViewResolver(){
+		
+		InternalResourceViewResolver resources = new InternalResourceViewResolver();
+		
+		resources.setPrefix("/WEB-INF/views/");
+		resources.setSuffix(".jsp");
+				
+		return resources;
+>>>>>>> d344f9fc8dd65b31d88db1a8ce95a2d406302ca6
 	}
 }

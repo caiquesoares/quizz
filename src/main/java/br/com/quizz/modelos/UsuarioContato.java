@@ -7,7 +7,10 @@ import javax.persistence.Id;
 
 @Entity
 public class UsuarioContato {
+<<<<<<< HEAD
 	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
+=======
+>>>>>>> d344f9fc8dd65b31d88db1a8ce95a2d406302ca6
 	private int id;
 	private String nome;
 	private String email;
@@ -48,4 +51,10 @@ public class UsuarioContato {
 		return "UsuarioContato [id=" + id + ", nome=" + nome + ", email=" + email + ", mensagem=" + mensagem
 				+ ", id_assunto=" + id_assunto + "]";
 	}
+<<<<<<< HEAD
 }
+=======
+	
+	
+}
+>>>>>>> d344f9fc8dd65b31d88db1a8ce95a2d406302ca6

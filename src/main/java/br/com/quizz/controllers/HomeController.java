@@ -22,6 +22,7 @@ public class HomeController {
 		return "home";
 	}
 	
+<<<<<<< HEAD
 	@RequestMapping("/acesso")
 	public String acesso(){
 		return "acesso";
@@ -35,4 +36,6 @@ public class HomeController {
 	
 	
 	
+=======
+>>>>>>> d344f9fc8dd65b31d88db1a8ce95a2d406302ca6
 }
