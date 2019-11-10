@@ -20,14 +20,23 @@ public class HomeController {
 		return "home";
 	}
 	
-//	@RequestMapping("/acesso")
-//	public String acesso(){
-//		return "acesso";
-//	}
+	@RequestMapping("/acesso")
+	public String acesso(){
+		return "acesso";
+	}
+	
+	@RequestMapping("/como-funciona")
+	public String comoFunciona(){
+		return "como-funciona";
+	}
+	
+	@RequestMapping("/ranking")
+	public String ranking(){
+		return "ranking";
+	}
 	
 	@RequestMapping("/contato")
-	public String contato(UsuarioContato usuarioContato){
-		contatoDao.inserir(usuarioContato);
+	public String contato(){
 		return "contato";
 	}
 	
