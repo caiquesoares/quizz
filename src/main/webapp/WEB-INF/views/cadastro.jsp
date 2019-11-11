@@ -35,14 +35,18 @@
 								<div class="form-group">
 									<label for="emailValido">E-mail</label> <input type="email"
 										class="form-control" id="emailValido"
-										aria-describedby="ajudaEmail" placeholder="Enter email">
+										aria-describedby="ajudaEmail" placeholder="Informe o email">
 									<small id="ajudaEmail" class="form-text text-muted">É
 										necessário informar um e-mail válido.</small>
 								</div>
 								<div class="form-group">
-									<label for="mensagem">Mensagem</label>
-									<textarea class="form-control" id="mensagem"
-										placeholder="Digite sua mensagem"></textarea>
+									<label for="apelido">Login</label> <input type="text"
+										class="form-control" id="apelido" placeholder="Informe seu usuário de acesso">
+								</div>
+								<div class="form-group">
+									<label for="senha">Senha</label>
+									<input type="password" id="senha" class="form-control" aria-describedby="ajudasenha">
+								    <small id="ajudasenha" class="text-muted">Deve ter entre 8 e 20 caracteres.</small>
 								</div>
 
 							</form>
