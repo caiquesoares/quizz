@@ -26,6 +26,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import br.com.quizz.controllers.AcessoController;
 import br.com.quizz.controllers.HomeController;
 import br.com.quizz.dao.ContatoDao;
+import br.com.quizz.dao.UsuarioDAO;
 
 @EnableWebMvc
 @ComponentScan(basePackageClasses = {
@@ -34,7 +35,8 @@ import br.com.quizz.dao.ContatoDao;
 //		RelatorioController.class,
 //		UsuarioController.class,
 		AcessoController.class,
-		ContatoDao.class
+		ContatoDao.class,
+		UsuarioDAO.class
 		})
 public class AppWebConfiguration  implements WebMvcConfigurer{
 	

@@ -3,26 +3,23 @@
 <jsp:include page="includes/header.jsp" />
 <div class="container">
 	<div id="content">
-		<div id="acessar">
+		<div id="cadastro">
+
 			<div class="row">
 				<div class="col-2"></div>
 				<div class="col-5">
-					<h2>Começe a jogar!</h2>
+					<h2>Cadastro</h2>
 					<div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							Exercitationem, odit, pariatur. Accusantium distinctio fugit in
-							nostrum quisquam. Doloremque error excepturi fuga, fugit impedit
-							minima molestiae officiis repellendus soluta vel voluptatem!</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							Exercitationem, odit, pariatur. Accusantium distinctio fugit in
-							nostrum quisquam. Doloremque error excepturi fuga, fugit impedit
-							minima molestiae officiis repellendus soluta vel voluptatem!</p>
+						<p>Para que você possa se divertir em nossa plataforma, 
+						precisamos garantir seu acesso.</p>
+						<p>Informe ao lado seus dados, para acessar nossa plataforma e 
+						garantir participação nesse <strong>Quizz</strong></p>
 					</div>
 					<div>
-						<h4>Ainda não tem cadastro?</h4>
+						<h4>Ja possui cadastro?</h4>
 						<div>
-							<a href="/quizz/cadastro" class="btn btn-primary">Realize
-								seu cadastro</a>
+					
+							<a href="/quizz/acesso" class="btn btn-primary">Acesse sua conta</a>
 						</div>
 					</div>
 				</div>
@@ -32,6 +29,10 @@
 						<div class="campos">
 							<form>
 								<div class="form-group">
+									<label for="nomeCompleto">Nome</label> <input type="text"
+										class="form-control" id="nome" placeholder="Informe seu nome">
+								</div>
+								<div class="form-group">
 									<label for="emailValido">E-mail</label> <input type="email"
 										class="form-control" id="emailValido"
 										aria-describedby="ajudaEmail" placeholder="Enter email">
@@ -39,15 +40,18 @@
 										necessário informar um e-mail válido.</small>
 								</div>
 								<div class="form-group">
-									<label for="senha">Senha</label> <input type="password"
-										class="form-control" id="senha" placeholder="Password">
+									<label for="mensagem">Mensagem</label>
+									<textarea class="form-control" id="mensagem"
+										placeholder="Digite sua mensagem"></textarea>
 								</div>
+
 							</form>
 						</div>
 						<div class="controles">
-							<a href="/quizz/usuario/" class="btn btn-primary">Acessar</a>
+							<button type="submit" class="btn btn-primary">Enviar</button>
 						</div>
 					</div>
+
 				</div>
 				<div class="col-1"></div>
 			</div>

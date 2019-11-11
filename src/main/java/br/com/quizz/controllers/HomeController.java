@@ -34,7 +34,10 @@ public class HomeController {
 	public String ranking(){
 		return "ranking";
 	}
-	
+	@RequestMapping("/cadastro")
+	public String cadastro(){
+		return "cadastro";
+	}
 	@RequestMapping("/contato")
 	public String contato(){
 		return "contato";

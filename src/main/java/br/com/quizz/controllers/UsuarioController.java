@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class UsuarioController{
+//	@Autowired
+//	private UsuarioDAO usuario; 
 	
 	@RequestMapping("/usuario")
 	public String index(){

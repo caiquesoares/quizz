@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class AcessoController {
 	
+	
 	@RequestMapping("/acesso/login")
 	
 	public String index(){

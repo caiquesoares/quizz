@@ -22,7 +22,7 @@
 					<div>
 						<h4>Ainda não tem cadastro?</h4>
 						<div>
-							<a href="/pages/cadastro.html" class="btn btn-primary">Realize
+							<a href="/quizz/cadastro" class="btn btn-primary">Realize
 								seu cadastro</a>
 						</div>
 					</div>
