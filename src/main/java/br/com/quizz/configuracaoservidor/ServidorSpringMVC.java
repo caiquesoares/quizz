@@ -14,7 +14,7 @@ public class ServidorSpringMVC extends AbstractAnnotationConfigDispatcherServlet
 	
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
-		return new Class[] {AppWebConfiguration.class};
+		return new Class[] {AppWebConfiguration.class, JPAConfiguration.class};
 	}
 	
 	//Pede o que nosso servidor deve atender
