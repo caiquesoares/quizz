@@ -29,15 +29,19 @@ public class UsuarioController{
 	}
 	
 	@RequestMapping("/usuario/sugestao")
-	public String usuarioSegestao(){
+	public String usuarioSugestao(){
 		return "usuario/sugestao";
 	}
 	
 	@RequestMapping("/cadastro/confirmacaoCadastro")
 	public String gravar(Usuario usuario){
-		System.out.println(usuario);
-		usuarioDao.gravar(usuario);
-		return "cadastro";
+		if(usuarioDao.verificaEmailExiste(usuario.getEmail())){
+			System.out.println("Não Cadastrado");
+			return "cadastro";	
+		}else{
+			usuarioDao.inserir(usuario);
+			return "cadastro";	
+		}
 	}
 	
 }

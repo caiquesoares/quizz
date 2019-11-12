@@ -25,6 +25,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import br.com.quizz.controllers.AcessoController;
 import br.com.quizz.controllers.HomeController;
+import br.com.quizz.controllers.UsuarioController;
 import br.com.quizz.dao.ContatoDao;
 import br.com.quizz.dao.UsuarioDAO;
 
@@ -33,7 +34,7 @@ import br.com.quizz.dao.UsuarioDAO;
 		HomeController.class,
 //		ParametrizacaoController.class,
 //		RelatorioController.class,
-//		UsuarioController.class,
+		UsuarioController.class,
 		AcessoController.class,
 		ContatoDao.class,
 		UsuarioDAO.class

@@ -20,5 +20,9 @@ public class ParametrizacaoController{
 	public String adminDashboard(){
 		return "admin/dashboard";
 	}
+	@RequestMapping("/admin/perguntas")
+	public String adminPerguntas(){
+		return "admin/perguntas";
+	}
 	
 }

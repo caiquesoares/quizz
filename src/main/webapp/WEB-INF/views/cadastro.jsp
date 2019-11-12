@@ -28,7 +28,7 @@
 					<form method="post" action="/quizz/cadastro/confirmacaoCadastro">
 						<div class="titulo"></div>
 						<div class="campos">
-							
+							 <input type="hidden" class="form-control" name="id_perfil" value="2">
 								<div class="form-group">
 									<label for="nomeCompleto">Nome</label> <input type="text"
 										class="form-control" name="nome" id="nome" placeholder="Informe seu nome">

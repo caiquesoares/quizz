@@ -1,5 +1,13 @@
+
 create database quiz_db;
 use quiz_db;
+drop table usuario;
+
+show tables;
+
+select * from usuario;
+select * from perfil;
+select now();
 
 create table usuario (
     id int not null auto_increment,
@@ -7,7 +15,7 @@ create table usuario (
     apelido varchar(20) not null,
     email varchar(100) not null,
     senha varchar(20) not null,
-    data_inicio date not null,
+    data_inicio timestamp not null DEFAULT CURRENT_TIMESTAMP,
     id_perfil int not null, 
     PRIMARY KEY (id)
 );
