@@ -1,0 +1,89 @@
+
+object{
+   width: 100%;
+  height: auto;
+ }
+body{
+  font-family: @font-padrao;
+  margin: 0;
+  .var-degrade;
+}
+a, a:hover{
+  text-decoration: none;
+  color: inherit;
+}
+.container{
+  position: relative;
+}
+#content{
+  border-radius: @border-radius;
+  background: @cor-clara;
+  padding: @pd-maior;
+}
+h1, h2, h3, h4, h5{
+  color: @cor-primaria;
+  font-weight: 600 !important;
+  //text-shadow: 1px 1px 1px @cor-primaria;
+}
+.btn-primary{
+  background: @cor-primaria !important;
+}
+
+//FLEX-BOX
+.row-flex{
+  display: flex;
+  width: 100%;
+  &.cabecalho{
+    background: #ddd;
+  }
+  &.linha{
+    border-bottom: 1px solid #ddd;
+    &:nth-child(odd){
+      background: #f1f1f1;
+    }
+  }
+  .flex-1{
+    flex: 1;
+  }
+  .flex-2{
+    flex: 2;
+  }
+  .flex-3{
+    flex: 3;
+  }
+  .flex-4{
+    flex: 4;
+  }
+  .flex-5{
+    flex: 5;
+  }
+  .flex-6{
+    flex: 6;
+  }
+  .flex-7{
+    flex: 7;
+  }
+  .flex-8{
+    flex: 8;
+  }
+  .flex-9{
+    flex: 9;
+  }
+  .flex-10{
+    flex: 10;
+  }
+}
+
+//alinhamentos
+.center{
+  text-align: center;
+}
+.left{
+  text-align: left;
+}
+.right{
+  text-align: right;
+}
+.justify{
+  text-align: justify;
+}

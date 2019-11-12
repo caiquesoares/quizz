@@ -1,0 +1,265 @@
+/*FONTS*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxIIzc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmYUtfBBc9.ttf) format('truetype');
+}
+/*CORES*/
+/*ESPACAMENTOS*/
+/*BORDAS*/
+/*DEGRADE*/
+.var-degrade {
+  background-color: #111 !important;
+}
+object {
+  width: 100%;
+  height: auto;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #111 !important;
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  position: relative;
+}
+#content {
+  border-radius: 4px;
+  background: #fff;
+  padding: 15px 20px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #ff6000;
+  font-weight: 600 !important;
+}
+.btn-primary {
+  background: #ff6000 !important;
+}
+.row-flex {
+  display: flex;
+  width: 100%;
+}
+.row-flex.cabecalho {
+  background: #ddd;
+}
+.row-flex.linha {
+  border-bottom: 1px solid #ddd;
+}
+.row-flex.linha:nth-child(odd) {
+  background: #f1f1f1;
+}
+.row-flex .flex-1 {
+  flex: 1;
+}
+.row-flex .flex-2 {
+  flex: 2;
+}
+.row-flex .flex-3 {
+  flex: 3;
+}
+.row-flex .flex-4 {
+  flex: 4;
+}
+.row-flex .flex-5 {
+  flex: 5;
+}
+.row-flex .flex-6 {
+  flex: 6;
+}
+.row-flex .flex-7 {
+  flex: 7;
+}
+.row-flex .flex-8 {
+  flex: 8;
+}
+.row-flex .flex-9 {
+  flex: 9;
+}
+.row-flex .flex-10 {
+  flex: 10;
+}
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.justify {
+  text-align: justify;
+}
+footer {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 10px 15px;
+}
+header {
+  padding: 15px 20px;
+}
+header .logo {
+  padding: 15px 20px;
+  text-align: center;
+}
+header .logo img {
+  display: inline-block;
+}
+header .menu nav {
+  width: 100%;
+  text-align: center;
+}
+header .menu nav ul {
+  padding-left: 0px;
+  list-style: none;
+  margin-bottom: 0;
+}
+header .menu nav ul li {
+  display: inline-block;
+}
+header .menu nav ul li a {
+  padding: 5px 10px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+}
+header .menu nav ul li a:hover {
+  border: 1px solid #ff6000;
+  border-radius: 4px;
+  text-decoration: none;
+}
+header .acessar nav {
+  position: absolute;
+  right: 30px;
+  top: 60px;
+  text-align: center;
+}
+header .acessar nav ul {
+  padding-left: 0px;
+  list-style: none;
+  margin-bottom: 0;
+}
+header .acessar nav ul li {
+  display: inline-block;
+}
+header .acessar nav ul li a {
+  padding: 5px 10px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  text-decoration: none;
+}
+header .acessar nav ul li a:hover {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  background: #ddd;
+  color: #ff6000;
+}
+#home #carousel {
+  margin: 10px -20px 0;
+  border-radius: 4px 4px 0 0;
+}
+#home #texto-home {
+  padding: 15px 20px;
+  text-align: center;
+}
+#quiz .numQuestoes {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+#quiz .numQuestoes ul {
+  padding-left: 0px;
+  margin-bottom: 0;
+  list-style: none;
+  display: inline-block;
+}
+#quiz .numQuestoes ul li {
+  display: inline-block;
+  background: #ddd;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  margin: 5px 10px;
+}
+#quiz .numQuestoes ul li.ativa {
+  background: #ff6000;
+}
+#quiz .questao {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
+}
+#quiz .questao .pergunta {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#quiz .questao .opcoes button {
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+}
+.loading {
+  font-size: 25px;
+  color: #ff6000;
+}
