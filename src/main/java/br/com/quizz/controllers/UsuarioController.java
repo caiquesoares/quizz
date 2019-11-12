@@ -33,11 +33,11 @@ public class UsuarioController{
 		return "usuario/sugestao";
 	}
 	
-	@RequestMapping("/cadastro")
-	public String grava (Usuario usuario){
+	@RequestMapping("/cadastro/confirmacaoCadastro")
+	public String gravar(Usuario usuario){
 		System.out.println(usuario);
 		usuarioDao.gravar(usuario);
-		Return ";
+		return "cadastro";
 	}
 	
 }

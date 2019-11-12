@@ -25,35 +25,37 @@
 				</div>
 				<div class="col-4">
 					<div class="formulario">
+					<form method="post" action="/quizz/cadastro/confirmacaoCadastro">
 						<div class="titulo"></div>
 						<div class="campos">
-							<form>
+							
 								<div class="form-group">
 									<label for="nomeCompleto">Nome</label> <input type="text"
-										class="form-control" id="nome" placeholder="Informe seu nome">
+										class="form-control" name="nome" id="nome" placeholder="Informe seu nome">
 								</div>
 								<div class="form-group">
 									<label for="emailValido">E-mail</label> <input type="email"
-										class="form-control" id="emailValido"
+										class="form-control" name="email" id="emailValido"
 										aria-describedby="ajudaEmail" placeholder="Informe o email">
-									<small id="ajudaEmail" class="form-text text-muted">É
+									<small id="ajudaEmail"  class="form-text text-muted">É
 										necessário informar um e-mail válido.</small>
 								</div>
 								<div class="form-group">
-									<label for="apelido">Login</label> <input type="text"
-										class="form-control" id="apelido" placeholder="Informe seu usuário de acesso">
+									<label for="apelido">Apelido</label> <input type="text"
+										class="form-control"  name="apelido" id="apelido" placeholder="Informe seu usuário de acesso">
 								</div>
 								<div class="form-group">
 									<label for="senha">Senha</label>
-									<input type="password" id="senha" class="form-control" aria-describedby="ajudasenha">
+									<input type="password" id="senha" name="senha" class="form-control" aria-describedby="ajudasenha">
 								    <small id="ajudasenha" class="text-muted">Deve ter entre 8 e 20 caracteres.</small>
 								</div>
 
-							</form>
+							
 						</div>
 						<div class="controles">
 							<button type="submit" class="btn btn-primary">Enviar</button>
 						</div>
+						</form>
 					</div>
 
 				</div>
