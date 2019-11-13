@@ -36,7 +36,6 @@ public class UsuarioController{
 	@RequestMapping("/cadastro/confirmacaoCadastro")
 	public String gravar(Usuario usuario){
 		if(usuarioDao.verificaEmailExiste(usuario.getEmail())){
-			System.out.println("Não Cadastrado");
 			return "cadastro";	
 		}else{
 			usuarioDao.inserir(usuario);
