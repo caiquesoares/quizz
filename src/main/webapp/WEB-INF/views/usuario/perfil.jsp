@@ -11,6 +11,7 @@
                        Perfil do jogador
                     </h2>
                     <div>
+                    	<p> Bem vindo, ${usuarioLogado.login}</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, odit, pariatur. Accusantium distinctio fugit in nostrum quisquam. Doloremque error excepturi fuga, fugit impedit minima molestiae officiis repellendus soluta vel voluptatem!</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, odit, pariatur. Accusantium distinctio fugit in nostrum quisquam. Doloremque error excepturi fuga, fugit impedit minima molestiae officiis repellendus soluta vel voluptatem!</p>
                     </div>

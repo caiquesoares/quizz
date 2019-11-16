@@ -16,7 +16,7 @@ public class ContatoDao {
 	private EntityManager manager;
 	
 	
-	public void inserir(UsuarioContato usuarioContato) {
-		manager.persist(usuarioContato);
+	public void inserir(UsuarioContato Usuariocontato) {
+		manager.persist(Usuariocontato);
 	}
 }

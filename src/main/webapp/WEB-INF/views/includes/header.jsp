@@ -42,7 +42,7 @@
 			<div class="acessar">
 				<nav>
 					<ul>
-						<li><a href="/quizz/acesso">Acessar</a></li>
+						<li><a href="/quizz/acesso/login">Acessar</a></li>
 					</ul>
 				</nav>
 			</div>

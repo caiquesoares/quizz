@@ -101,11 +101,11 @@ angular.module('quiz', [])
                         ]
                     },
                 ];
-                $scope.numQuestoes = this.numeroQuestoes();
+                $scope.numQuestoes = $scope.numeroQuestoes();
                 $scope.questaoAtiva(1);
             }
 
-            this.numeroQuestoes = function(){
+            $scope.numeroQuestoes = function(){
                 let numQuestoes = [];
                 $scope.questoes.forEach(function(e, i){
                     numQuestoes.push(i + 1);

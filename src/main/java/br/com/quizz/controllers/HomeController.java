@@ -1,10 +1,14 @@
 package br.com.quizz.controllers;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import br.com.quizz.dao.ContatoDao;
+import br.com.quizz.modelos.UsuarioContato;
+
+
 
 @Controller
 public class HomeController {
@@ -16,10 +20,6 @@ public class HomeController {
 		return "home";
 	}
 	
-	@RequestMapping("/acesso")
-	public String acesso(){
-		return "acesso";
-	}
 	
 	@RequestMapping("/como-funciona")
 	public String comoFunciona(){
@@ -36,6 +36,12 @@ public class HomeController {
 	}
 	@RequestMapping("/contato")
 	public String contato(){
+		return "contato";
+	}
+	
+	@RequestMapping("/contato/enviar")
+	public String gravar(UsuarioContato usuarioContato) {
+		contatoDao.inserir(usuarioContato);
 		return "contato";
 	}
 	

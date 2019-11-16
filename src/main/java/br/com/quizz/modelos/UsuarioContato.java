@@ -13,6 +13,8 @@ public class UsuarioContato {
 	private String email;
 	private String mensagem;
 	private int id_assunto;
+	
+	
 	public int getId() {
 		return id;
 	}
@@ -47,6 +49,6 @@ public class UsuarioContato {
 	@Override
 	public String toString() {
 		return "UsuarioContato [id=" + id + ", nome=" + nome + ", email=" + email + ", mensagem=" + mensagem
-				+ ", id_assunto=" + id_assunto + "]";
+				+ ", id_assunto=" + "]";
 	}
 }
