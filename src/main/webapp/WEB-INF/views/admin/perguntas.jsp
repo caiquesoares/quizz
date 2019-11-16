@@ -9,8 +9,7 @@
 			<div class="titulo">
 				<h2>Perguntas/Opções</h2>
 			</div>	
-			${sucesso}
-			<c:if test="sucesso != null">
+			<c:if test="$ {sucesso != null}">
 				<div class="alert alert-success">
 					${sucesso}
 				</div>
