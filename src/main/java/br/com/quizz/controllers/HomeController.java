@@ -1,14 +1,23 @@
 package br.com.quizz.controllers;
 
+<<<<<<< HEAD
+=======
+import java.util.List;
+>>>>>>> 1922ef3deae913f8f48c2091459f2361aebe1173
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import br.com.quizz.dao.ContatoDao;
+<<<<<<< HEAD
 import br.com.quizz.modelos.UsuarioContato;
 
 
+=======
+import br.com.quizz.modelos.Pergunta;
+>>>>>>> 1922ef3deae913f8f48c2091459f2361aebe1173
 
 @Controller
 public class HomeController {
@@ -31,9 +40,11 @@ public class HomeController {
 		return "ranking";
 	}
 	@RequestMapping("/cadastro")
-	public String cadastro(){
-		return "cadastro";
+	public ModelAndView cadastro(){
+		ModelAndView modelAndView = new ModelAndView("/cadastro");
+		return modelAndView;
 	}
+	
 	@RequestMapping("/contato")
 	public String contato(){
 		return "contato";
