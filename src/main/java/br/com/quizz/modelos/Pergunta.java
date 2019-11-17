@@ -1,8 +1,22 @@
 package br.com.quizz.modelos;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Pergunta {
+	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 	private int idPergunta;
+	private int opcao;
+	public int getOpcao() {
+		return opcao;
+	}
+	public void setOpcao(int opcao) {
+		this.opcao = opcao;
+	}
 	private String label;
 	private int resposta;
 	

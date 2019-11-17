@@ -3,6 +3,7 @@ package br.com.quizz.modelos;
 import java.sql.Date;
 
 public class Ranking {
+	
 	private int id;
 	private int id_usuario;
 	private int pontuacao;

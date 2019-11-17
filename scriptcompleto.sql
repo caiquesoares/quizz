@@ -1,12 +1,13 @@
 
 create database quiz_db;
 use quiz_db;
-drop table usuario;
+drop table pergunta;
 
 show tables;
 
 select * from usuario;
 select * from perfil;
+select * from pergunta;
 select now();
 
 create table usuario (
@@ -28,8 +29,9 @@ create table perfil (
 
 create table pergunta (
     id int auto_increment,
-    idPergunta int,
+    idPergunta int null,
     label varchar(255) not null,
+    opcao int null,
     resposta int not null,
     PRIMARY KEY (id)
 );
