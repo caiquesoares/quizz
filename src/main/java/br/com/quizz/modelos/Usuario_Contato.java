@@ -6,14 +6,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class UsuarioContato {
+public class Usuario_Contato {
 	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 	private String nome;
 	private String email;
 	private String mensagem;
 	private int id_assunto;
-	
 	
 	public int getId() {
 		return id;

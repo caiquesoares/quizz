@@ -7,14 +7,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import br.com.quizz.dao.UsuarioDAO;
+import br.com.quizz.dao.UsuarioDao;
 import br.com.quizz.modelos.Usuario;
 
 
 @Controller
 public class UsuarioController {
 	@Autowired
-	private UsuarioDAO usuarioDao;
+	private UsuarioDao usuarioDao;
 	
 
 	@RequestMapping("/usuario")
@@ -40,7 +40,7 @@ public class UsuarioController {
 
 	@RequestMapping("/cadastro/confirmacaoCadastro")
 	public ModelAndView gravar(Usuario usuario, RedirectAttributes redirectAttributes){
-		ModelAndView modelAndView = new ModelAndView("redirect:/cadastro");
+		ModelAndView modelAndView = new ModelAndView("redirzect:/cadastro");
 		if(usuarioDao.verificaEmailExiste(usuario.getEmail())){
 			System.out.println("Saiu aqui");
 			redirectAttributes.addFlashAttribute("falha", "E-mail ou Apelido já estão cadastrados!");

@@ -8,22 +8,22 @@ import javax.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.com.quizz.modelos.Usuario_Contato;
+import br.com.quizz.modelos.Ranking;
 
 @Repository
 @Transactional
-public class ContatoDao {
-	
+public class RankingDao {
+
 	@PersistenceContext
 	private EntityManager manager;
 	
-	
-	public void inserir(Usuario_Contato usuarioContato) {
-		manager.persist(usuarioContato);
+	// realizar chamada da procedure
+	public void chamarProcedure(){
+		
 	}
 	
-	public List<Usuario_Contato> listar(){
-		return manager.createQuery("select us from Usuario_Contato us", Usuario_Contato.class)
+	public List<Ranking> listar(){
+		return manager.createQuery("select p from Ranking p", Ranking.class)
 				.getResultList();
 	}
 }

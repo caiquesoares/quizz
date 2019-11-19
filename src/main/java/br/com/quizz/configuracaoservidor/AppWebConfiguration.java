@@ -28,7 +28,8 @@ import br.com.quizz.controllers.HomeController;
 import br.com.quizz.controllers.ParametrizacaoController;
 import br.com.quizz.controllers.UsuarioController;
 import br.com.quizz.dao.ContatoDao;
-import br.com.quizz.dao.UsuarioDAO;
+import br.com.quizz.dao.RankingDao;
+import br.com.quizz.dao.UsuarioDao;
 
 @EnableWebMvc
 @ComponentScan(basePackageClasses = {
@@ -38,7 +39,8 @@ import br.com.quizz.dao.UsuarioDAO;
 		UsuarioController.class,
 		AcessoController.class,
 		ContatoDao.class,
-		UsuarioDAO.class
+		RankingDao.class,
+		UsuarioDao.class
 		})
 public class AppWebConfiguration  implements WebMvcConfigurer{
 	

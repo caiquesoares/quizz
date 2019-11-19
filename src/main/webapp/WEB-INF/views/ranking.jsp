@@ -1,10 +1,30 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
+	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="s"%>
 <jsp:include page="includes/header.jsp" />
 <div class="container">
 	<div id="content">
 		<div id="ranking">
-		RANKING
+		<div class="titulo">
+				<h2>RANKING</h2>
+			</div>	
+			
+			<div class="alert"></div>	
+			<div class="table-responsive">
+				<table class="table table-stripped">
+					<tr>
+						<td>Jogador</td>
+						<td>Recorde</td>
+					</tr>
+					<c:forEach items="${ranking }" var="ranking">
+					<tr>
+						<td>${ranking.id_usuario}</td>
+						<td>${ranking.pontuacao}</td>
+					</tr>
+					</c:forEach>
+				</table>
+			</div>
 		
 		</div>
 	</div>

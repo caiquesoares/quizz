@@ -5,12 +5,12 @@ import javax.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import br.com.quizz.dao.UsuarioDAO;
+import br.com.quizz.dao.UsuarioDao;
 import br.com.quizz.modelos.Usuario;
 
 @Controller
 public class AcessoController {
-	UsuarioDAO usuarioDAO = new UsuarioDAO();
+	UsuarioDao usuarioDAO = new UsuarioDao();
 	
 	@RequestMapping("/acesso/login")
 	

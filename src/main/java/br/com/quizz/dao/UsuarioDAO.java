@@ -6,7 +6,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
 
-
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -14,13 +13,12 @@ import br.com.quizz.modelos.Usuario;
 
 @Repository
 @Transactional
-public class UsuarioDAO {
+public class UsuarioDao {
 	@PersistenceContext
 	private EntityManager manager;
 	
 	public void inserir(Usuario usuario){
 		manager.persist(usuario);
-		
 	}
 	public void deletar(int Id){
 		
@@ -31,8 +29,6 @@ public class UsuarioDAO {
 	public List<Usuario> listar(){
 		return manager.createQuery("select u from Usuario u", Usuario.class)
 		.getResultList();
-		
-		
 	}
 	public Boolean verificaEmailExiste(String email){
 		Usuario user;
@@ -56,8 +52,5 @@ public class UsuarioDAO {
 		}
 		return usuario != null;
 	}
-	
-	
-	
 	
 }

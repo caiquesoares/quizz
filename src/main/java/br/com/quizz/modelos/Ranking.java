@@ -1,14 +1,19 @@
 package br.com.quizz.modelos;
 
-import java.sql.Date;
+import java.sql.Timestamp;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Ranking {
-	
+	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 	private int id_usuario;
 	private int pontuacao;
-	private Date data_pontuacao;
-	
+	private Timestamp data_pontuacao;
 	
 	public int getId() {
 		return id;
@@ -28,15 +33,12 @@ public class Ranking {
 	public void setPontuacao(int pontuacao) {
 		this.pontuacao = pontuacao;
 	}
-	public Date getData_pontuacao() {
+	public Timestamp getData_pontuacao() {
 		return data_pontuacao;
-		
 	}
-	
-	public void setData_pontuacao(Date data_pontuacao) {
+	public void setData_pontuacao(Timestamp data_pontuacao) {
 		this.data_pontuacao = data_pontuacao;
 	}
-	
 	@Override
 	public String toString() {
 		return "Ranking [id=" + id + ", id_usuario=" + id_usuario + ", pontuacao=" + pontuacao + ", data_pontuacao="

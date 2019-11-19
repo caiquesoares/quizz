@@ -52,4 +52,5 @@ public class ParametrizacaoDao {
 		return manager.createQuery("select p from Pergunta p", Pergunta.class)
 				.getResultList();
 	}
+	
 }

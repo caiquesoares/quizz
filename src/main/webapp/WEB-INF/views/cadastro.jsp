@@ -12,13 +12,6 @@
 				<div class="col-2"></div>
 				<div class="col-5">
 					<h2>Cadastro</h2>
-					
-					
-					
-					
-					
-					
-				
 					<div>
 						<p>Para que você possa se divertir em nossa plataforma,
 							precisamos garantir seu acesso.</p>
@@ -31,7 +24,7 @@
 						<h4>Ja possui cadastro?</h4>
 						<div>
 
-							<a href="/quizz/acesso" class="btn btn-primary">Acesse sua
+							<a href="/quizz/acesso/login" class="btn btn-primary">Acesse sua
 								conta</a>
 						</div>
 					</div>
@@ -72,8 +65,6 @@
 										aria-describedby="ajudasenha"> <small id="ajudasenha"
 										class="text-muted">Deve ter entre 8 e 20 caracteres.</small>
 								</div>
-
-
 							</div>
 							<div class="controles">
 								<button type="submit" class="btn btn-primary">Enviar</button>
