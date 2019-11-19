@@ -1,10 +1,5 @@
 Manifest-Version: 1.0
-<<<<<<< HEAD
-Built-By: lilia
+Built-By: caique.fagundes
 Build-Jdk: 1.8.0_221
-=======
-Built-By: Caique
-Build-Jdk: 1.8.0_201
->>>>>>> 1922ef3deae913f8f48c2091459f2361aebe1173
 Created-By: Maven Integration for Eclipse
 

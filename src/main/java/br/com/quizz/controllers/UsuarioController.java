@@ -39,16 +39,6 @@ public class UsuarioController {
 	}
 
 	@RequestMapping("/cadastro/confirmacaoCadastro")
-<<<<<<< HEAD
-	public String gravar(Usuario usuario) {
-		if (usuarioDao.verificaEmailExiste(usuario.getEmail())) {
-			return "cadastro";
-		} else {
-			usuarioDao.inserir(usuario);
-			return "cadastro";
-		}
-
-=======
 	public ModelAndView gravar(Usuario usuario, RedirectAttributes redirectAttributes){
 		ModelAndView modelAndView = new ModelAndView("redirect:/cadastro");
 		if(usuarioDao.verificaEmailExiste(usuario.getEmail())){
@@ -60,7 +50,6 @@ public class UsuarioController {
 		}
 		
 		return modelAndView;
->>>>>>> 1922ef3deae913f8f48c2091459f2361aebe1173
 	}
 
 	
