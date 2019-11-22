@@ -33,8 +33,7 @@ public class UsuarioDao {
 	public Boolean verificaEmailExiste(String email){
 		Usuario user;
 		try{
-			user = manager.createQuery("select u from Usuario u where u.email=:email", Usuario.class).setParameter("email",email)
-					.getSingleResult();
+			user = manager.createQuery("select u from Usuario u where u.email=:email", Usuario.class).setParameter("email",email).getSingleResult();
 		}catch(NoResultException e){
 			user = null;	
 		}

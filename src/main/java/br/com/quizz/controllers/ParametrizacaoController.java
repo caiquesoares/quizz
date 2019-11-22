@@ -36,6 +36,16 @@ public class ParametrizacaoController{
 		return "admin/dashboard";
 	}
 	
+	@RequestMapping("/admin/sugestoes")
+	public ModelAndView adminListarSugestoes(){
+		List<Usuario_Contato> contatos = contatoDao.listar();
+		ModelAndView modelAndView = new ModelAndView("/admin/sugestoes");
+		modelAndView.addObject("contatos", contatos);
+		return modelAndView;
+	}
+	
+
+	
 	@RequestMapping("/admin/perguntas")
 	public ModelAndView adminListarPergunta(){
 		List<Pergunta> perguntas = parametrizacaoDao.listar();

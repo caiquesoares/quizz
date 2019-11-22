@@ -39,7 +39,7 @@
 						<li><a href="/quizz">Perfil</a></li>
 						<li><a href="/quizz/usuario/quizz">Jogar!</a></li>
 						<li><a href="/quizz/usuario/ranking">Ranking</a></li>
-						<li><a href="/quizz/usuario/sugestao">Sugestões</a></li>
+						<li><a href="/quizz/usuario/sugestoes">Sugestões</a></li>
 					</ul>
 				</nav>
 			</div>

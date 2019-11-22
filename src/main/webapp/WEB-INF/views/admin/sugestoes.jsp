@@ -7,22 +7,20 @@
 	<div id="content">
 		<div id="usuarios">
 			<div class="titulo">
-				<h2>USUÁRIOS</h2>
+				<h2>SUGESTÕES</h2>
 			</div>	
 			<div class="table-responsive">
 				<table class="table table-stripped">
 					<tr>
-						<td>Apelido</td>
 						<td>Nome</td>
 						<td>E-mail</td>
-						<td>Data Cadastro</td>
+						<td>Mensagem</td>
 					</tr>
-					<c:forEach items="${usuarios }" var="usuario">
+					<c:forEach items="${contatos }" var="contato">
 					<tr>
-						<td>${usuario.apelido}</td>
-						<td>${usuario.nome}</td>
-						<td>${usuario.email}</td>
-						<td>${pergunta.data_inicio}</td>
+						<td>${contato.nome }</td>
+						<td>${contato.email }</td>
+						<td>${contato.mensagem }</td>
 					</tr>
 					</c:forEach>
 				</table>
