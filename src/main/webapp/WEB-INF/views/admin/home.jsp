@@ -1,5 +1,7 @@
-	<%@ page language="java" contentType="text/html; charset=utf-8"
+<%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="s"%>
+<%@ taglib prefix='c' uri='http://java.sun.com/jsp/jstl/core'%>
 <jsp:include page="../includes/admin-header.jsp" />
 <div class="container">
 	<div id="content">
@@ -16,31 +18,38 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="formulario">
-						<div class="titulo"></div>
-						<div class="campos">
-							<form>
+					<c:if test="${sucesso != null}">
+						<div class="alert alert-success">${sucesso}</div>
+					</c:if>
+					<c:if test="${falha != null}">
+						<div class="alert alert-danger">${falha}</div>
+					</c:if>
+					<div class="formulario">
+						<form action="/quizz/admin/logar" method="post">
+							<div class="titulo"></div>
+							<div class="campos">
 								<div class="form-group">
-									<label for="emailValido">E-mail</label> <input type="email"
-										class="form-control" id="emailValido"
-										aria-describedby="ajudaEmail" placeholder="Enter email">
-									<small id="ajudaEmail" class="form-text text-muted">É
+									<label for="email">E-mail</label> <input type="email"
+										class="form-control" id="email" aria-describedby="ajudaEmail"
+										placeholder="Enter email" name="email"> <small
+										id="ajudaEmail" class="form-text text-muted">É
 										necessário informar um e-mail válido.</small>
 								</div>
 								<div class="form-group">
 									<label for="senha">Senha</label> <input type="password"
-										class="form-control" id="senha" placeholder="Password">
+										class="form-control" id="senha" placeholder="Password"
+										name="senha">
 								</div>
-							</form>
-						</div>
-						<div class="controles">
-							<a href="/quizz/admin/dashboard" class="btn btn-primary">Acessar</a>
-						</div>
+								<div class="controles">
+									<button type="submit" class="btn btn-primary">Acessar</button>
+							</div>
+							</div>
+						</form>
 					</div>
-                </div>
-                <div class="col-1"></div>
-            </div>
-        </div>
+				</div>
+			</div>
+			<div class="col-1"></div>
+		</div>
 	</div>
 </div>
 

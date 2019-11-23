@@ -2,7 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s"%>
-<%@ taglib prefix='c' uri='http://java.sun.com/jsp/jstl/core' %>
+<%@ taglib prefix='c' uri='http://java.sun.com/jsp/jstl/core'%>
 <jsp:include page="includes/header.jsp" />
 <div class="container">
 	<div id="content">
@@ -24,8 +24,8 @@
 						<h4>Ja possui cadastro?</h4>
 						<div>
 
-							<a href="/quizz/acesso/login" class="btn btn-primary">Acesse sua
-								conta</a>
+							<a href="/quizz/acesso/login" class="btn btn-primary">Acesse
+								sua conta</a>
 						</div>
 					</div>
 				</div>

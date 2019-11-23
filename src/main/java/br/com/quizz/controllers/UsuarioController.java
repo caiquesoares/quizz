@@ -53,8 +53,8 @@ public class UsuarioController {
 		}
 		return modelAndView;
 	}
-		
-	
+
+
 	@RequestMapping("/usuario/sugestoes/enviar")
 	public ModelAndView gravar(Usuario_Contato usuarioContato,RedirectAttributes redirectAttributes) {
 		ModelAndView modelAndView = new ModelAndView("redirect:/usuario/sugestoes");
@@ -64,7 +64,7 @@ public class UsuarioController {
 			contatoDao.inserir(usuarioContato);
 			redirectAttributes.addFlashAttribute("sucesso", "Contato enviado com sucesso!");
 		}
-	
+
 		return modelAndView;
 	}
 }
