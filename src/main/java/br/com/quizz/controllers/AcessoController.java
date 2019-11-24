@@ -2,6 +2,8 @@ package br.com.quizz.controllers;
 
 
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,13 +13,14 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import br.com.quizz.dao.ParametrizacaoDao;
 import br.com.quizz.dao.UsuarioDao;
+import br.com.quizz.modelos.Usuario;
 
 
 @Controller
 public class AcessoController {
 
 	@Autowired
-	UsuarioDao usuarioDaO = new UsuarioDao();
+	UsuarioDao usuarioDao = new UsuarioDao();
 	@Autowired
 	ParametrizacaoDao paraDao = new ParametrizacaoDao();
 	
@@ -29,34 +32,33 @@ public class AcessoController {
 		return "acesso";
 	}
 
-	@RequestMapping ("/acesso/login/enviar")
-	public ModelAndView validaUsuario (@RequestParam ("email") String email, @RequestParam ("senha") String senha, RedirectAttributes redirectAttributes) {
+
+	
+	@RequestMapping("/acesso/login/enviar")
+	public ModelAndView loginUsuario(HttpSession session, Usuario usuario, @RequestParam ("email") String email, @RequestParam ("senha") String senha, RedirectAttributes redirectAttributes) {
 		ModelAndView modelAndView = new ModelAndView();
 
-		if (usuarioDaO.existeUsuario(email, senha) == false) {
-			System.out.println("teste de usuario invalido");
+		if (usuarioDao.existeUsuario(usuario, email, senha) == null) {
 			redirectAttributes.addFlashAttribute("falha", "E-mail ou senha não encontrados!");
 			modelAndView.setViewName("redirect:/acesso/login");
 		}else {
-			System.out.println("Achei o miserável");
-			redirectAttributes.addFlashAttribute("sucesso", "Encaminhando para a pagina principal");
+			redirectAttributes.addFlashAttribute("sucesso",usuario);
+			session.setAttribute("Usuario", usuario);
 			modelAndView.setViewName("redirect:/usuario");
 		}
 		return modelAndView;
-
+		
 	}
-	
 	@RequestMapping("/admin/logar")
-	public ModelAndView loginAdmin(@RequestParam ("email") String email, @RequestParam ("senha") String senha, RedirectAttributes redirectAttributes) {
+	public ModelAndView loginAdmin(HttpSession session, Usuario usuario, @RequestParam ("email") String email, @RequestParam ("senha") String senha, RedirectAttributes redirectAttributes) {
 		ModelAndView modelAndView = new ModelAndView();
 
-		if (paraDao.existeUsuario(email, senha) == false) {
-			System.out.println("teste de usuario invalido");
+		if (paraDao.existeUsuario(usuario, email, senha) == null) {
 			redirectAttributes.addFlashAttribute("falha", "E-mail ou senha não encontrados!");
 			modelAndView.setViewName("redirect:/admin");
 		}else {
-			System.out.println("Achei o miserável");
-			redirectAttributes.addFlashAttribute("sucesso", "Encaminhando para a pagina principal");
+			redirectAttributes.addFlashAttribute("sucesso",usuario);
+			session.setAttribute("Usuario", usuario);
 			modelAndView.setViewName("redirect:/admin/dashboard");
 		}
 		return modelAndView;

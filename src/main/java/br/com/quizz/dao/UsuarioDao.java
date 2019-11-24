@@ -8,7 +8,7 @@ import javax.persistence.PersistenceContext;
 
 
 
-import org.springframework.orm.hibernate4.HibernateTemplate;
+
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -46,23 +46,20 @@ public class UsuarioDao {
 		return user != null;
 	}
 
-	public Boolean existeUsuario(String email, String senha ) {
+	public Usuario existeUsuario(Usuario usuario, String email, String senha ) {
 
-		Usuario usuario = new Usuario();
-		boolean eValido = false;
+		
 		try {
 			String hql = "select u from Usuario u where u.email=:email and u.senha=:senha";
 
-			usuario =(Usuario) manager.createQuery(hql, Usuario.class).setParameter("email", email).setParameter("senha", senha).getSingleResult();
-			
-			if(usuario != null ) {
-				eValido = true;
-			}
+			usuario = manager.createQuery(hql, Usuario.class).setParameter("email", email).setParameter("senha", senha).getSingleResult();
+			System.out.println(usuario);
+	
 		} catch (Exception e) {
+			return null;
 		}
-		
-		
-		return eValido;
+	
+		return usuario;
 	}
 
 }
