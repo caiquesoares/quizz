@@ -64,5 +64,12 @@ public class AcessoController {
 		return modelAndView;
 		
 	}
+	
+	
+	@RequestMapping("deslogar")
+    public String logoutUsuario(HttpSession session) {
+        session.invalidate();
+        return "redirect:/acesso/login";
+    }
 }
 

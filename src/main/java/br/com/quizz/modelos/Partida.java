@@ -1,13 +1,23 @@
 package br.com.quizz.modelos;
 
-import java.sql.Date;
+
+import java.sql.Timestamp;
+
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 
 public class Partida {
+	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 	private int id_usuario;
 	private int pontos;
-	private Date data_inicio;
-	private Date data_fim;
+	private Timestamp data_inicio;
+	private Timestamp data_fim;
 	
 	
 	public int getId() {
@@ -28,16 +38,16 @@ public class Partida {
 	public void setPontos(int pontos) {
 		this.pontos = pontos;
 	}
-	public Date getData_inicio() {
+	public Timestamp getData_inicio() {
 		return data_inicio;
 	}
-	public void setData_inicio(Date data_inicio) {
+	public void setData_inicio(Timestamp data_inicio) {
 		this.data_inicio = data_inicio;
 	}
-	public Date getData_fim() {
+	public Timestamp getData_fim() {
 		return data_fim;
 	}
-	public void setData_fim(Date data_fim) {
+	public void setData_fim(Timestamp data_fim) {
 		this.data_fim = data_fim;
 	}
 	@Override

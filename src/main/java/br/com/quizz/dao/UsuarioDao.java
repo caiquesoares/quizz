@@ -53,7 +53,7 @@ public class UsuarioDao {
 			String hql = "select u from Usuario u where u.email=:email and u.senha=:senha";
 
 			usuario = manager.createQuery(hql, Usuario.class).setParameter("email", email).setParameter("senha", senha).getSingleResult();
-			System.out.println(usuario);
+		
 	
 		} catch (Exception e) {
 			return null;
@@ -61,5 +61,6 @@ public class UsuarioDao {
 	
 		return usuario;
 	}
+	
 
 }
