@@ -48,6 +48,7 @@ public class PartidaController {
 			Timestamp data_fim = null;
 			partida.setData_fim(data_fim);
 			partidaDao.inserir(partida);
+			partidaDao.chamarProc();
 			redirectAttributes.addFlashAttribute("sucesso", "Partida Gravada");
 		return modelAndView;
 	}
