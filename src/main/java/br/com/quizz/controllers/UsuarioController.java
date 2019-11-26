@@ -1,6 +1,7 @@
 
 package br.com.quizz.controllers;
 
+import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,6 +12,7 @@ import br.com.quizz.dao.ContatoDao;
 import br.com.quizz.dao.UsuarioDao;
 import br.com.quizz.modelos.Usuario;
 import br.com.quizz.modelos.Usuario_Contato;
+
 
 
 @Controller
@@ -45,9 +47,10 @@ public class UsuarioController {
 	public ModelAndView gravar(Usuario usuario, RedirectAttributes redirectAttributes){
 		ModelAndView modelAndView = new ModelAndView("redirect:/cadastro");
 		if(usuarioDao.verificaEmailExiste(usuario.getEmail())){
-			System.out.println("Saiu aqui");
+			
 			redirectAttributes.addFlashAttribute("falha", "E-mail ou Apelido já estão cadastrados!");
 		}else{
+			carregarJson(usuario);
 			usuarioDao.inserir(usuario);
 			redirectAttributes.addFlashAttribute("sucesso", "Usuário cadastrado com sucesso!");
 		}
@@ -67,4 +70,18 @@ public class UsuarioController {
 
 		return modelAndView;
 	}
+	
+	public JSONObject carregarJson(Usuario usuario){
+		//Cria um Objeto JSON
+        JSONObject jsonObject = new JSONObject();
+        
+        jsonObject.put("nome", usuario.getNome());
+        jsonObject.put("apelido", usuario.getApelido());
+        jsonObject.put("email", usuario.getEmail());
+        
+        
+        System.out.println(jsonObject);
+		return jsonObject;
+	}
+	
 }

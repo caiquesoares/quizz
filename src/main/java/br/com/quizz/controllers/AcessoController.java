@@ -47,7 +47,6 @@ public class AcessoController {
 			modelAndView.setViewName("redirect:/usuario");
 		}
 		return modelAndView;
-		
 	}
 	@RequestMapping("/admin/logar")
 	public ModelAndView loginAdmin(HttpSession session, Usuario usuario, @RequestParam ("email") String email, @RequestParam ("senha") String senha, RedirectAttributes redirectAttributes) {

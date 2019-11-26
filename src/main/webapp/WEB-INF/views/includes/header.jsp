@@ -17,7 +17,6 @@
 <script src="content/dist/js/main.js"></script>
 
 <title>Quizz!</title>
-
 </head>
 <body>
 	<header>
@@ -32,7 +31,7 @@
 				<nav>
 					<ul>
 						<li><a href="/quizz">Home</a></li>
-						<li><a href="/quizz/acesso">Jogar!</a></li>
+						<li><a href="/quizz/acesso/login">Jogar!</a></li>
 						<li><a href="/quizz/como-funciona">Como Funciona?</a></li>
 						<li><a href="/quizz/ranking">Ranking</a></li>
 						<li><a href="/quizz/contato">Contato</a></li>
