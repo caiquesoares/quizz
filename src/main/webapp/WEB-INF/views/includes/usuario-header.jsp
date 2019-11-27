@@ -46,7 +46,7 @@
 			<div class="acessar">
 				<nav>
 					<ul>
-						<li><a href="deslogar">Deslogar</a></li>
+						<li><a href="usuario/deslogar">Deslogar</a></li>
 					</ul>
 				</nav>
 			</div>

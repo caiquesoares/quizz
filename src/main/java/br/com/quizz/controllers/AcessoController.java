@@ -65,7 +65,7 @@ public class AcessoController {
 	}
 	
 	
-	@RequestMapping("deslogar")
+	@RequestMapping("/usuario/deslogar")
     public String logoutUsuario(HttpSession session) {
         session.invalidate();
         return "redirect:/acesso/login";
