@@ -24,7 +24,7 @@ public class UsuarioController {
 
 	@RequestMapping("/usuario")
 	public String index() {
-		System.out.println(usuarioDao.listar().get(0));
+		//System.out.println(usuarioDao.listar().get(0));
 		return "usuario/perfil";
 	}
 

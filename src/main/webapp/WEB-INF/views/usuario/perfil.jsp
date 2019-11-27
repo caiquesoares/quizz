@@ -11,9 +11,9 @@
                        Perfil do jogador
                     </h2>
                     <div>
-                    	<p> Bem vindo, ${usuario.nome}</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, odit, pariatur. Accusantium distinctio fugit in nostrum quisquam. Doloremque error excepturi fuga, fugit impedit minima molestiae officiis repellendus soluta vel voluptatem!</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, odit, pariatur. Accusantium distinctio fugit in nostrum quisquam. Doloremque error excepturi fuga, fugit impedit minima molestiae officiis repellendus soluta vel voluptatem!</p>
+                    	<p> Bem vindo(a),</p>
+                        <p>Aqui é sua área do jogador, no menu acima você consegue navegar e acessar partidas, pontuações e caso necessite pode dar uma palavrinha conosco!</p>
+                        <p> Que começem os jogos!</p>
                     </div>
                 </div>
                 <div class="col-4">

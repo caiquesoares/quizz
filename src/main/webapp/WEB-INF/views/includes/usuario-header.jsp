@@ -36,7 +36,7 @@
 			<div class="menu">
 				<nav>
 					<ul>
-						<li><a href="/quizz">Perfil</a></li>
+						<li><a href="/quizz/usuario">Perfil</a></li>
 						<li><a href="/quizz/usuario/quizz">Jogar!</a></li>
 						<li><a href="/quizz/usuario/ranking">Ranking</a></li>
 						<li><a href="/quizz/usuario/sugestoes">Sugestões</a></li>
