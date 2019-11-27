@@ -48,13 +48,9 @@ public class UsuarioDao {
 
 	public Usuario existeUsuario(Usuario usuario, String email, String senha ) {
 
-		
 		try {
 			String hql = "select u from Usuario u where u.email=:email and u.senha=:senha";
-
 			usuario = manager.createQuery(hql, Usuario.class).setParameter("email", email).setParameter("senha", senha).getSingleResult();
-		
-	
 		} catch (Exception e) {
 			return null;
 		}

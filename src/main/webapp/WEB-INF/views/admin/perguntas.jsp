@@ -19,7 +19,6 @@
 				<table class="table table-stripped">
 					<tr>
 						<td>ID</td>
-						<td>Vinculo</td>
 						<td>Pergunta/Opção</td>
 						<td>Resposta</td>
 						<td>Ações</td>
@@ -27,12 +26,11 @@
 					<c:forEach items="${perguntas }" var="pergunta">
 					<tr>
 						<td>${pergunta.id}</td>
-						<td>${pergunta.idPergunta}</td>
 						<td>${pergunta.label}</td>
 						<td>${pergunta.resposta}</td>
 						<td>
-							<a href="/quizz/admin/perguntas" class="btn btn-primary">Editar</a>
-							<a href="/quizz/admin/perguntas" class="btn btn-danger">Excluir</a>
+							<a href="/quizz/admin/perguntas/editar-pergunta?id_pergunta=${pergunta.id}" class="btn btn-primary">Editar</a>
+							<a href="/quizz/admin/perguntas/editar-pergunta?id_pergunta=${pergunta.id}" class="btn btn-danger">Excluir</a>
 						</td>
 					</tr>
 					</c:forEach>

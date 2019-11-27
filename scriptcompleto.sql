@@ -3,13 +3,14 @@ create database quiz_db;
 use quiz_db;
 drop table pergunta;
 
+
 show tables;
 
-select * from usuario;
+	select * from usuario;
 select * from perfil;
 select * from pergunta;
 select now();
-
+select * from pergunta;
 create table usuario (
     id int not null auto_increment,
     nome varchar(120) not null,
@@ -29,8 +30,8 @@ create table perfil (
 
 create table pergunta (
     id int auto_increment,
-    idPergunta int null,
-    label varchar(255) not null,
+    id_pergunta int null,
+    label varchar(2000) not null,
     opcao int null,
     resposta int not null,
     PRIMARY KEY (id)
@@ -68,7 +69,8 @@ create table ranking (
     PRIMARY KEY (id)
 );
 
-
+-- pergunta
+alter table pergunta add CONSTRAINT fk_pergunta_idPergunta_x_pergunta_id FOREIGN KEY (id_pergunta) REFERENCES pergunta(id);
 
 -- usuario_contato
 alter table usuario_contato add FOREIGN KEY (id_assunto) REFERENCES assunto(id);
