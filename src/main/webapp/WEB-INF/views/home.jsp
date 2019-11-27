@@ -36,16 +36,12 @@
     </div>
     <div id="texto-home">
         <h3>
-            DIVIRTA-SE COM ESSE QUIZ INCRÍVEL;!
+            TESTE SEUS CONHECIMENTOS!
         </h3>
         <p>
-        	https://crunchify.com/spring-mvc-how-to-access-modelmap-values-in-a-jsp/
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae blanditiis consectetur consequatur, debitis distinctio facilis fugiat impedit ipsum iste laboriosam laborum magni nam nisi sunt tempora temporibus veniam veritatis voluptates?
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae blanditiis consectetur consequatur, debitis distinctio facilis fugiat impedit ipsum iste laboriosam laborum magni nam nisi sunt tempora temporibus veniam veritatis voluptates?
-        </p>
-    </div>
+       Aqui você encontra diversão ao mesmo tempo em que consegue exercitar seu raciocínio.
+        </p>   
+Chame os amigos, a família ou até mesmo tire um tempo só para você e valide seus conhecimentos nesse QUIZZ.
 </div>
 </div>
 </div>

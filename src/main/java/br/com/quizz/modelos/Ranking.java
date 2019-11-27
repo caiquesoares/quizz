@@ -11,16 +11,7 @@ import javax.persistence.ParameterMode;
 import javax.persistence.StoredProcedureParameter;
 
 @Entity
-@NamedStoredProcedureQuery(name = "sp_ranking", procedureName = " sp_ranking", 
 
-	parameters= {
-			@StoredProcedureParameter(mode = ParameterMode.IN, type = Partida.class, name = "id_usuario" ),
-			@StoredProcedureParameter(mode = ParameterMode.IN, type = Partida.class, name = "pontuacao" ),
-			@StoredProcedureParameter(mode = ParameterMode.IN, type = Partida.class, name = "data_pontuacao"),
-			@StoredProcedureParameter(mode = ParameterMode.OUT, type = Ranking.class, name = "relatorio" )
-	}
-		
-		)
 public class Ranking {
 	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
