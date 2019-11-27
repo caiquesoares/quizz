@@ -23,7 +23,6 @@ public class PartidaDao {
 	public void chamarProc(){
 		StoredProcedureQuery query = manager.createStoredProcedureQuery("sp_ranking");
 			query.execute();
-		// manager.createQuery("call sp_ranking").executeUpdate();
 	}
 
 }
