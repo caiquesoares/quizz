@@ -10,22 +10,17 @@
 			<div class="row">
 				<div class="col-2"></div>
 				<div class="col-5">
-					<h2>Começe a jogar!</h2>
+					<h2>Prove que você é o melhor</h2>
 					<div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							Exercitationem, odit, pariatur. Accusantium distinctio fugit in
-							nostrum quisquam. Doloremque error excepturi fuga, fugit impedit
-							minima molestiae officiis repellendus soluta vel voluptatem!</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							Exercitationem, odit, pariatur. Accusantium distinctio fugit in
-							nostrum quisquam. Doloremque error excepturi fuga, fugit impedit
-							minima molestiae officiis repellendus soluta vel voluptatem!</p>
+						<p>Para iniciar essa jornada, precisamos que você 
+						informe alguns dados para cadastrar seu acesso.</p>
+						<p>São poucas informações para que você possa 
+						aproveitar essa experência incrível!</p>
 					</div>
 					<div>
-						<h4>Ainda não tem cadastro?</h4>
+						<h4>Vamos começar?</h4>
 						<div>
-							<a href="/quizz/cadastro" class="btn btn-primary">Realize seu
-								cadastro</a>
+							<a href="/quizz/cadastro" class="btn btn-primary">Cadastre-se</a>
 						</div>
 					</div>
 				</div>
@@ -43,13 +38,13 @@
 								<div class="form-group">
 									<label for="email">E-mail</label> <input type="email"
 										class="form-control" id="email" aria-describedby="ajudaEmail"
-										placeholder="Enter email" name="email"> <small
+										placeholder="Informe seu e-mail" name="email"> <small
 										id="ajudaEmail" class="form-text text-muted">É
 										necessário informar um e-mail válido.</small>
 								</div>
 								<div class="form-group">
 									<label for="senha">Senha</label> <input type="password"
-										class="form-control" id="senha" placeholder="Password"
+										class="form-control" id="senha" placeholder="Informe uma senha"
 										name="senha">
 								</div>
 								<div class="controles">

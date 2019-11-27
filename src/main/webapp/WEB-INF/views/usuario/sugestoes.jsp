@@ -10,16 +10,10 @@
 			<div class="row">
 				<div class="col-2"></div>
 				<div class="col-5">
-					<h2>Tem alguma critica ou sugestão?</h2>
+					<h2>Precisa conversar?</h2>
 					<div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							Exercitationem, odit, pariatur. Accusantium distinctio fugit in
-							nostrum quisquam. Doloremque error excepturi fuga, fugit impedit
-							minima molestiae officiis repellendus soluta vel voluptatem!</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							Exercitationem, odit, pariatur. Accusantium distinctio fugit in
-							nostrum quisquam. Doloremque error excepturi fuga, fugit impedit
-							minima molestiae officiis repellendus soluta vel voluptatem!</p>
+						<p>Tem alguma dica ? Estamos abertos para te atender!</p>
+						<p>Para encaminhar qualquer dúvida, sugestão, reclamação etc... É só preencher o formulário ao lado.</p>
 					</div>
 				</div>
 				<div class="col-4">
@@ -41,7 +35,7 @@
 								<div class="form-group">
 									<label for="emailValido">E-mail</label> <input type="email"
 										class="form-control" name="email" id="emailValido"
-										aria-describedby="ajudaEmail" placeholder="Enter email">
+										aria-describedby="ajudaEmail" placeholder="Informe seu e-mail">
 									<small id="ajudaEmail" class="form-text text-muted">É
 										necessário informar um e-mail válido.</small>
 								</div>

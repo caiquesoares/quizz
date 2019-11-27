@@ -80,6 +80,7 @@ h5 {
 }
 .btn-primary {
   background: #ff6000 !important;
+  border-color: #ff6000;
 }
 .row-flex {
   display: flex;
@@ -177,6 +178,7 @@ header .menu nav ul li a:hover {
   border: 1px solid #ff6000;
   border-radius: 4px;
   text-decoration: none;
+  background: #ffffff;
 }
 header .acessar nav {
   position: absolute;
