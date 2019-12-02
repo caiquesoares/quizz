@@ -83,6 +83,21 @@ public class ParametrizacaoController{
 		return modelAndView; 
 	}
 	
+	
+	
+	
+	@RequestMapping("/admin/perguntas/clicarbotao")
+	public String mostrarNome(){
+		System.out.println("lilian");
+		List<Pergunta> perguntas = parametrizacaoDao.listar();
+		int valorTotal = 0;
+		for (int i = 0; i < perguntas.size(); i++) {
+			valorTotal += perguntas.get(i).getResposta(); 	 
+		}
+		System.out.println("Valor Total" + valorTotal);
+		return "/admin/perguntas";
+	}
+	
 
 	
 //	@RequestMapping("/admin/contatos")

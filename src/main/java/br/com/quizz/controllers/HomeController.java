@@ -11,6 +11,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import br.com.quizz.dao.ContatoDao;
 import br.com.quizz.dao.RankingDao;
 import br.com.quizz.modelos.Ranking;
+import br.com.quizz.modelos.RelatoriosPartida;
 import br.com.quizz.modelos.Usuario_Contato;
 
 @Controller
@@ -19,6 +20,7 @@ public class HomeController {
 	private ContatoDao contatoDao;
 	@Autowired
 	private RankingDao rankingDao;
+	
 	
 	@RequestMapping("/")
 	public String index(){
@@ -31,13 +33,7 @@ public class HomeController {
 		return "como-funciona";
 	}
 	
-	@RequestMapping("/ranking")
-	public ModelAndView ranking(){
-		List<Ranking> ranking = rankingDao.listar();
-		ModelAndView modelAndView = new ModelAndView("/ranking");
-		modelAndView.addObject("ranking", ranking);
-		return modelAndView;
-	}
+	
 	
 	@RequestMapping("/cadastro")
 	public ModelAndView cadastro(){
@@ -61,5 +57,13 @@ public class HomeController {
 		}
 	
 		return modelAndView;
+	}
+	
+	@RequestMapping("/ranking")
+	public ModelAndView adminListarContatos(){
+		List<RelatoriosPartida> relatorioPartida = rankingDao.listar();
+		ModelAndView modelAndView = new ModelAndView("/ranking");
+		modelAndView.addObject("relatorioPartida", relatorioPartida);
+		return modelAndView; 
 	}
 }

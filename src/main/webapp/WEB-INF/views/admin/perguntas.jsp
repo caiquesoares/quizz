@@ -16,6 +16,7 @@
 			</c:if>
 			<div class="alert"></div>	
 			<div class="table-responsive">
+			<a href="/quizz/admin/perguntas/clicarbotao" class="btn btn-primary">Mostrar Nome</a>
 				<table class="table table-stripped">
 					<tr>
 						<td>ID</td>
